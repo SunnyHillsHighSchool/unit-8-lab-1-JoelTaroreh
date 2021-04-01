@@ -4,7 +4,7 @@ class Main
   public static void main(String[] args) 
   {
     Picture pic = new Picture("beach.jpg");
-     pic.decreaseBlue(.60);
+     pic.topToBottom();
     pic.write("output.jpg");
   }
 }

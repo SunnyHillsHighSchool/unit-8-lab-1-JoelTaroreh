@@ -367,7 +367,16 @@ public class Picture
   }
 
    ////////////////////// methods ///////////////////////////////////////
-
+public void topToBottom() {
+  Pixel[][] pic = this.getPixels2D(); 
+  int length = pic.length;
+  int width = pic[0].length;
+  for(int i = 0; i < width; i++) {
+    for(int j = 0; j < length/2; j++) {
+      pic[length-1-j][i].setColor(pic[j][i].getColor());
+    }
+  }
+}
    
 
 
